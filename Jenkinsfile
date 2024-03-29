@@ -1,13 +1,13 @@
 pipeline {
-agent any
+    agent any
 
 
 
     stages {
-     stage ('BUILD') {
-      steps {
-          sh 'pwd'
-}
-}
-}
+        stage ('CHECKOUT') {
+            steps {
+                sh 'echo "checking out the stage"'
+            }
+        }
+    }
 }
